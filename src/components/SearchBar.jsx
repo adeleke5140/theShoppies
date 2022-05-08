@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function SearchBar() {
+export default function SearchBar({ input, updateInput }) {
   return (
     <div className="searchBar">
       <label htmlFor="search">
@@ -27,6 +27,8 @@ export default function SearchBar() {
             id="search"
             className="search__input"
             results="2"
+            value={input}
+            onChange={(e) => updateInput(e)}
           />
         </span>
       </label>

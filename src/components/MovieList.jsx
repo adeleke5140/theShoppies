@@ -1,9 +1,9 @@
 import React from "react"
 
-export default function MovieList() {
+export default function MovieList({ input }) {
   return (
     <div className="movie__container">
-      <p className="movieList__title">Results from searchResult</p>
+      <p className="movieList__title">Results from {input}</p>
       <ul className="movieList">
         <li>
           search result <button>nominate</button>
