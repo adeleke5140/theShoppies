@@ -18,7 +18,7 @@
 html,
 body {
   height: 100%;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 62.5%;
 }
 /*
@@ -101,4 +101,33 @@ h6 {
   padding: 2em;
   margin-bottom: 4em;
   font-size: 1.5rem;
+}
+
+.search__title {
+  position: relative;
+  top: 23px;
+  font-weight: bold;
+}
+
+.search__input--iconed {
+  position: relative;
+}
+
+.search__input--icon {
+  width: 1.5rem;
+  top: 32px;
+  left: 10px;
+  position: relative;
+}
+
+.search__input {
+  padding: 0.5em 1.9em 0.5em;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  border: 1px solid grey;
+  width: 100%;
+  max-width: 40em;
+  font-weight: bold;
 }
