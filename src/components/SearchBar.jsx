@@ -2,7 +2,7 @@ import React from "react"
 
 export default function SearchBar() {
   return (
-    <div className="SearchBar">
+    <div className="searchBar">
       <label htmlFor="search">
         <p className="search__title">Movie Title</p>
         <span className="search__input--iconed">
