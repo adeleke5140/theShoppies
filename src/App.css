@@ -163,6 +163,10 @@ button {
   font-weight: bold;
 }
 
+button:disabled {
+  opacity: 0.5;
+}
+
 .movieList__item > button {
   background: rgb(79, 197, 91);
   color: #fff;
