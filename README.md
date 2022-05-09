@@ -12,3 +12,5 @@ The site is built with:
 
 1. `React`
 2. `CSS`
+3. `Axios` Instead of `React-Query`
+4. `Vite`
