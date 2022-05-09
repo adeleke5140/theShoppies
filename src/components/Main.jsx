@@ -33,6 +33,9 @@ const Main = () => {
   const updateInput = (event) => setInput(event.target.value)
 
   const addNomination = (movie) => {
+    if (nominatedMovies.includes(movie)) {
+      return
+    }
     //get the latest added movie and include it to the added movie array with other nominated items
     const newNomination = [...nominatedMovies, movie]
     setnominatedMovies(newNomination)
@@ -43,10 +46,19 @@ const Main = () => {
     setnominatedMovies(newNomination)
   }
 
+  const increment = () => {
+    setnominationCount(nominationCount++)
+  }
+
   return (
     <div className="main">
       <SearchBar input={input} updateInput={updateInput} />
-      <MovieList input={input} movies={movies} nominate={addNomination} />
+      <MovieList
+        input={input}
+        movies={movies}
+        nominate={addNomination}
+        increment={increment}
+      />
       <Nomination
         nominations={nominatedMovies}
         removeNomination={removeNomination}
