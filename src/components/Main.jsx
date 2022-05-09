@@ -15,7 +15,8 @@ const Main = () => {
   //fetch movies based on the search Input
   const getMovies = async (input) => {
     const searchText = input.toLowerCase()
-    const url = `http://www.omdbapi.com/?apikey=${api_key}&s=${searchText}&type=movie`
+
+    const url = `https://www.omdbapi.com/?apikey=${api_key}&s=${searchText}&type=movie`
     axios.get(url).then((res) => {
       if (res.data.Search) {
         setMovies(res.data.Search)
