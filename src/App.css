@@ -92,7 +92,7 @@ h6 {
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
-  height: 100vh;
+  /* height: 100vh; */
   padding: 0 4em;
 }
 
@@ -150,7 +150,34 @@ input[type="search"] {
   font-weight: bold;
 }
 
+.movieList__item,
+.nominations__item {
+  margin-bottom: 0.6em;
+}
+
+button {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 6px;
+  margin-left: 0.7em;
+  font-weight: bold;
+}
+
+.movieList__item > button {
+  background: rgb(79, 197, 91);
+  color: #fff;
+}
+
+.nomination {
+  overflow: scroll;
+}
+
 .nomination__title {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.nominations__item button {
+  background: red;
+  color: #fff;
 }
