@@ -28,7 +28,7 @@ export default function SearchBar({ input, updateInput }) {
             className="search__input"
             results="2"
             value={input}
-            onChange={(e) => updateInput(e)}
+            onChange={updateInput}
           />
         </span>
       </label>
