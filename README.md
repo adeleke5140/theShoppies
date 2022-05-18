@@ -23,4 +23,4 @@ I need to revamp the styling to make it pretty with colors. I will get back to i
 
 In the meantime, I'd be busting some Heroku Errors.
 
-![Demo](https://theshoppies12.netlify.app/)
+[Demo](https://theshoppies12.netlify.app/)
